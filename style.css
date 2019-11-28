@@ -1,4 +1,38 @@
-#basketball-body{
+#basketball-body, #basketball-header {
     background-color: darkorange;
     color: black;
+}
+#basketball-body:hover {
+    background-color: black;
+    color: darkorange;
+}
+#baseball-body, #baseball-header {
+    background-color: white;
+    color: red;
+}
+#baseball-body:hover {
+    background-color: red;
+    color: white;
+}
+#football-body, #football-header {
+    background-color: saddlebrown;
+    color: white;
+}
+#football-body:hover{
+    background-color: white;
+    color: saddlebrown;
+}
+#hockey-body, #hockey-header{
+    background-color: black;
+    color: slategrey;
+}
+#hockey-body:hover{
+    background-color: slategrey;
+    color: black;
+}
+#setting-btn{
+   margin-left: 30px;
+}
+#add-a-question-btn{
+    margin-left:600px;
 }
