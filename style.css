@@ -38,6 +38,18 @@
     background-color: slategrey;
     color: black;
 }
-.row button{
-    color: #1e7e34;
+.col button{
+    color: darkorange;
+    background-color: black;
+    border: 2px solid white;
+    margin-left: 10em;
+    margin-right: 10em;
+    margin-bottom: 2em;
+    font-size: 22px;
+}
+
+.row button:hover{
+    color: black;
+    background-color: darkorange;
+    border: 2px dotted white;
 }

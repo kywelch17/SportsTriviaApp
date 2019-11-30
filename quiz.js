@@ -1,5 +1,5 @@
 const question = document.getElementById("question");
-const choices = Array.from(document.getElementsByClassName("btn btn-outline-primary"));
+const choices = Array.from(document.getElementsByClassName("btn btn-lg btn-outline-primary"));
 const questionNumber = document.getElementById("q-num");
 const scoreNumber = document.getElementById("score-num");
 
