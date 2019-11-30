@@ -6,6 +6,14 @@
     background-color: black;
     color: darkorange;
 }
+#basketball-footer {
+    background-color: black;
+    color: darkorange;
+    text-decoration: none;
+}
+#basketball-footer:hover {
+    background-color: green;
+}
 #baseball-body, #baseball-header {
     background-color: white;
     color: red;
@@ -30,9 +38,6 @@
     background-color: slategrey;
     color: black;
 }
-#setting-btn{
-   margin-left: 30px;
-}
-#add-a-question-btn{
-    margin-left:600px;
+.row button{
+    color: #1e7e34;
 }
