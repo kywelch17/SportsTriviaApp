@@ -1,5 +1,7 @@
 const question = document.getElementById("question");
 const choices = Array.from(document.getElementsByClassName("btn btn-outline-primary"));
+const questionNumber = document.getElementById("q-num");
+const scoreNumber = document.getElementById("score-num");
 
 //let currentQuestion = {};
 let askingQuestion = {};
@@ -40,6 +42,7 @@ let questions = [
 
 //CONSTANTS
 const MAX_QUESTIONS = 3;
+const POINTS = 1;
 
 startGame = () => {
     questionCounter = 0;
@@ -59,6 +62,8 @@ getNewQuestion = () => {
     askingQuestion = questionsLeft[questionIndex];
     question.innerText = askingQuestion.question;
 
+    questionNumber.innerText = `${questionCounter}/${MAX_QUESTIONS}`;
+
     choices.forEach(choice => {
         const number = choice.dataset["number"];
         choice.innerText = askingQuestion["choice" + number];
@@ -77,9 +82,26 @@ choices.forEach(choice => {
         const selectedChoice = e.target;
         const selectedAnswer = selectedChoice.dataset["number"];
         console.log(selectedAnswer);
-        getNewQuestion();
+
+        const coic =
+            selectedAnswer == askingQuestion.answer ? "correct" : "incorrect";
+
+        selectedChoice.parentElement.classList.add(coic);
+
+        if(coic === "correct")
+            addScore(POINTS);
+
+        setTimeout(() => {
+            selectedChoice.parentElement.classList.remove(coic);
+            getNewQuestion();
+        }, 900);
     });
 });
+
+addScore = n => {
+    scoreCounter = scoreCounter + n;
+    scoreNumber.innerText = scoreCounter;
+};
 
 startGame();
 
