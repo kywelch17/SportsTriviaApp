@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,5 +10,72 @@
 </head>
 <body>
 
+
+    <footer class="page-footer font-small blue">
+        <div class="footer-copyright text-center py-3"><small>© 2019 Copyright:</small>
+            <small>Kyle Welch (<a href="https://github.com/kywelch17/">kywelch17)</a></small>
+        </div>
+    </footer>
+</body>
+</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sports Trivia App - Basketball</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+<div class="jumbotron" style="background-color: black;">
+    <div class="jumbotron vertical-center" style="background-color: darkorange;
+                                                      color: black;">
+        <div class="container text-center">
+            <h2 class="text-center" style="text-decoration: underline;">Hockey Quiz</h2>
+            <div id="heads-up-display">
+                <div id="heads-up-display-item-question">
+                    <p class="heads-up-display-name">Question</p>
+                    <h2 class="heads-up-display-main" id="q-num">0</h2>
+                </div>
+                <div id="heads-up-display-item-score">
+                    <p class="heads-up-display-name">Score</p>
+                    <h2 class="heads-up-display-main" id="score-num">0</h2>
+                </div>
+            </div>
+        </div>
+        <div class="container" style="background-color: darkorange;">
+            <br><br>
+            <h3 id = question class="text-lg-center">What is my name?</h3>
+            <br>
+            <div class="col text-center">
+                <button class="btn btn-lg btn-outline-primary" data-number="1"
+                        style="margin-bottom: 1em;">Centered button</button>
+            </div>
+            <div class="col text-center">
+                <button class="btn btn-lg btn-outline-primary" data-number="2"
+                        style="margin-bottom: 1em;">Centered button</button>
+            </div>
+            <div class="col text-center">
+                <button class="btn btn-lg btn-outline-primary" data-number="3"
+                        style="margin-bottom: 1em;">Centered button</button>
+            </div>
+            <div class="col text-center">
+                <button class="btn btn-lg btn-outline-primary" data-number="4"
+                        style="margin-bottom: 1em;">Centered button</button>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="page-footer font-small blue" style="background-color: black;
+                                                       color: darkorange;">
+    <div class="footer-copyright text-center py-3"><small>© 2019 Copyright:</small>
+        <small>Kyle Welch (<a href="https://github.com/kywelch17/" id="basketball-footer">kywelch17</a>)</small>
+    </div>
+</footer>
+<script src="quiz.js"></script>
 </body>
 </html>
